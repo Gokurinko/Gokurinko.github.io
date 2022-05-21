@@ -19,6 +19,7 @@ header {
     position: relative;
     margin: 5%;
     width: fit-content;
+    cursor: pointer;
 }
 
 .active-div {
@@ -31,11 +32,11 @@ header {
     width: 100%;
     background-color: hsla(178, 100%, 50%, 0.411);
     border-radius: 1em;
-    display: none;
+    opacity: 0;
 }
 
-.active-div:active {
-    display: block;
+header:active .active-div {
+    opacity: 1;
 }
 
 #imgone {

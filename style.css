@@ -1,0 +1,127 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    max-height: 80%;
+    max-width: 20%;
+    border-radius: 1em;
+}
+
+header {
+    position: relative;
+    margin: 5%;
+    width: fit-content;
+}
+
+.active-div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.411);
+    border-radius: 1em;
+    display: none;
+}
+
+.active-div:active {
+    display: block;
+}
+
+#imgone {
+    width: 100%;
+    max-height: 40%;
+    border-radius: 1em;
+}
+
+
+
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p,
+div,
+footer,
+#card-name {
+    font-size: .9em;
+}
+
+div,
+footer {
+    margin-left: 5%;
+}
+
+footer {
+    margin-bottom: 5%;
+}
+
+#card-time,
+#card-cr {
+    color: hsl(215, 51%, 70%);
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+
+#card-price {
+    color: hsl(178, 100%, 50%);
+}
+
+#card-name {
+    color: white;
+}
+
+h1:active,
+#card-name:active {
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+#imgtwo {
+    height: 30px;
+    width: 30px;
+    margin-right: 1em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* Mediaqueries */
+
+@media (max-width: 375px) {
+    .card {
+        max-height: 85%;
+        min-width: 80%;
+        border-radius: 1em;
+    }
+}
